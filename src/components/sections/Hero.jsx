@@ -5,6 +5,7 @@ import Container from '../common/Container';
 const Hero = () => {
     const [currentImage, setCurrentImage] = React.useState(0);
 
+
     const images = [
         "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80", // Female student
         "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80", // Teacher with students
@@ -15,12 +16,16 @@ const Hero = () => {
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"  // Group collaboration
     ];
 
+
+
     React.useEffect(() => {
         const timer = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
         }, 4000);
         return () => clearInterval(timer);
     }, []);
+
+
 
     return (
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-slate-50 to-white">

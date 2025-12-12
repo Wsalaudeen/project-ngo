@@ -29,11 +29,11 @@ const AudienceCards = () => {
         <Section className="bg-white">
             <Container>
                 {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="text-slate-500 font-medium tracking-wide text-sm mb-4 block">Get Involved</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+                <div className="text-center max-w-4xl mx-auto mb-16">
+                    <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-6 block">Get Involved</h2>
+                    <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
                         Join the movement for a kinder, safer, and more respectful society
-                    </h2>
+                    </p>
                 </div>
 
                 {/* Cards Grid */}

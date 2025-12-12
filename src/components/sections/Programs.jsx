@@ -55,7 +55,7 @@ const Programs = () => {
                         </p>
 
                         <p className="text-slate-600 leading-relaxed text-sm">
-                            Equips teams to lead and serve with conscience, courtesy, emotional intelligence, and accountability—fostering refined behaviour and positive institutional culture.
+                            Equips teams to lead and serve with conscience, courtesy, emotional intelligence, and accountability fostering refined behaviour and positive institutional culture.
                         </p>
                     </div>
                 </div>

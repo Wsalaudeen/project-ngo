@@ -44,8 +44,7 @@ const Newsletter = () => {
                     </div>
                 </div>
 
-                {/* Divider */}
-                <div className="border-t border-slate-200 mb-12"></div>
+
 
                 {/* Social Media */}
                 <div className="text-center">

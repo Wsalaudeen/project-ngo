@@ -45,7 +45,9 @@ const Navbar = () => {
                                 {link.name}
                             </a>
                         ))}
-                        <Button variant="primary" className="py-2.5 px-6 text-sm">Get Involved</Button>
+                        <a href="#contact">
+                            <Button variant="primary" className="py-2.5 px-6 text-sm">Get Involved</Button>
+                        </a>
                     </div>
 
                     <div className="md:hidden flex items-center">
@@ -75,7 +77,9 @@ const Navbar = () => {
                             </a>
                         ))}
                         <div className="pt-2">
-                            <Button variant="primary" className="w-full justify-center">Get Involved</Button>
+                            <a href="#contact" onClick={() => setIsOpen(false)} className="block w-full">
+                                <Button variant="primary" className="w-full justify-center">Get Involved</Button>
+                            </a>
                         </div>
                     </div>
                 </div>
