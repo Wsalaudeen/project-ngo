@@ -24,7 +24,7 @@ const Programs = () => {
                                 <Package size={28} strokeWidth={1.5} />
                             </div>
                             <span className="inline-block py-1.5 px-4 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold tracking-wide">
-                                Ages 7–13
+                                Ages 7-13
                             </span>
                         </div>
 
@@ -75,21 +75,48 @@ const Programs = () => {
                                 <Globe size={32} className="text-white" strokeWidth={1.5} />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold mb-1">The Civility Improvement Initiative</h3>
-                                <div className="text-primary-200 text-sm">Our Flagship Campaign</div>
+                                <h3 className="text-2xl font-bold mb-1">Civility Improvement Initiative</h3>
+                                <div className="text-primary-200 text-sm font-medium">Good Manners & Humanity Campaign</div>
                             </div>
                         </div>
 
-                        <p className="text-lg md:text-xl text-primary-50 max-w-3xl mb-12 leading-relaxed">
-                            A transformative values campaign promoting moral education, civic responsibility, and conscience-led leadership in homes, schools, institutions, and communities.
-                        </p>
+                        <div className="space-y-10 max-w-4xl">
+                            <p className="text-lg text-primary-50 leading-relaxed font-medium">
+                                The Civility Improvement Initiative is ESVO’s flagship programme designed to restore civility, empathy, refinement, and human dignity across schools, healthcare facilities, care homes, institutions, and communities in South-East Nigeria.
+                            </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            {['School Outreaches', 'Workshops & Training', 'Community Engagement'].map((item, i) => (
-                                <div key={i} className="px-6 py-4 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10 text-sm font-medium text-white text-center">
-                                    {item}
+                            <div>
+                                <h4 className="text-lg font-bold text-white mb-4">Why This Matters</h4>
+                                <p className="text-base text-primary-100 leading-relaxed mb-4">
+                                    Across many sectors, declining standards of conduct, limited emotional intelligence, and weakened value systems are affecting learning environments, service delivery, leadership effectiveness, and social cohesion. When respect erodes, trust breaks down, and communities suffer.
+                                </p>
+                                <p className="text-base text-primary-100 leading-relaxed">
+                                    This initiative responds by addressing behaviour at its root. Through practical tool kits, structured mentorship, and value-based engagement, ESVO equips individuals and institutions with the skills and mindset needed to foster respectful relationships, humane leadership, and safer, more inclusive environments.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 className="text-lg font-bold text-white mb-6">Our Impact Vision</h4>
+                                <p className="text-base text-primary-100 leading-relaxed mb-6">
+                                    By strengthening character and promoting everyday civility, the Civility Improvement Initiative contributes to:
+                                </p>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {[
+                                        'Improved behaviour and emotional intelligence in schools',
+                                        'More compassionate and ethical leadership in institutions',
+                                        'Safer, kinder, and more dignified spaces for learning, care, and service',
+                                        'Stronger communities grounded in mutual respect and humanity'
+                                    ].map((item, i) => (
+                                        <div key={i} className="px-6 py-4 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10 text-sm font-medium text-white flex items-center">
+                                            {item}
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
+                            </div>
+
+                            <p className="text-base text-primary-100 italic leading-relaxed border-t border-white/20 pt-8 mt-8">
+                                "At its heart, this programme affirms that sustainable social change begins with how we treat one another, intentionally, consistently, and together."
+                            </p>
                         </div>
                     </div>
                 </div>

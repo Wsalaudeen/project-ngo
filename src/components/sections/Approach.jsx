@@ -3,6 +3,7 @@ import Section from '../common/Section';
 import Container from '../common/Container';
 import { Eye, Target, Heart } from 'lucide-react';
 
+
 const Approach = () => {
     return (
         <Section className="bg-white" id="about">
@@ -32,7 +33,7 @@ const Approach = () => {
                     <div className="bg-white rounded-3xl p-8 cursor-pointer">
                         <div className="flex flex-col sm:flex-row gap-6 items-start mb-6">
                             <img
-                                src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                src="/founder.jpg"
                                 alt="Jane Kalu Ndukwe"
                                 className="w-24 h-24 rounded-2xl object-cover flex-shrink-0"
                             />
