@@ -40,7 +40,7 @@ const Newsletter = () => {
                             <Mail size={28} strokeWidth={1.5} />
                         </div>
                         <h3 className="text-slate-500 text-sm font-medium uppercase tracking-wider mb-2">Email</h3>
-                        <p className="text-slate-900 font-semibold text-lg">info@esvo.ng</p>
+                        <p className="text-slate-900 font-semibold text-lg">info@esvo.org</p>
                     </div>
                 </div>
 
