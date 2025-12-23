@@ -31,7 +31,7 @@ const Newsletter = () => {
                             <Phone size={28} strokeWidth={1.5} />
                         </div>
                         <h3 className="text-slate-500 text-sm font-medium uppercase tracking-wider mb-2">Phone</h3>
-                        <p className="text-slate-900 font-semibold text-lg">+234 XXX XXX XXXX</p>
+                        <p className="text-slate-900 font-semibold text-lg">+234 806 603 8421</p>
                     </div>
 
                     {/* Email */}

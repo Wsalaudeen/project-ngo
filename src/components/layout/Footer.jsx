@@ -35,7 +35,7 @@ const Footer = () => {
                         <ul className="space-y-4 text-slate-400">
                             <li>Enugu, Nigeria</li>
                             <li>info@esvo.ng</li>
-                            <li>+234 XXX XXX XXXX</li>
+                            <li>+234 806 603 8421</li>
                         </ul>
                     </div>
                 </div>
