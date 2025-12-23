@@ -8,13 +8,11 @@ const Footer = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20 mb-20">
                     {/* Brand Section */}
                     <div className="lg:pr-12">
-                        <div className="flex items-start gap-4 mb-6">
-                            <div className="w-12 h-12 bg-white rounded-xl flex-shrink-0"></div>
-                            <div>
-                                <h3 className="text-white text-2xl font-bold leading-none mb-1">ESVO</h3>
-                                <p className="text-slate-400 text-sm">Etiquette and Social Values Organization</p>
-                            </div>
-                        </div>
+                        <img
+                            src="/footer_logo.jpg"
+                            alt="ESVO Logo"
+                            className="w-40 h-auto rounded-xl mb-6"
+                        />
                         <p className="text-slate-400 leading-relaxed text-sm max-w-md">
                             Restoring civility and moral consciousness through values-based education in homes, schools, and communities.
                         </p>
