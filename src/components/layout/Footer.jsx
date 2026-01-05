@@ -9,7 +9,7 @@ const Footer = () => {
                     {/* Brand Section */}
                     <div className="lg:pr-12">
                         <img
-                            src="/footer_logo.jpg"
+                            src="/footer_logo_v2.jpg"
                             alt="ESVO Logo"
                             className="w-40 h-auto rounded-xl mb-6"
                         />
