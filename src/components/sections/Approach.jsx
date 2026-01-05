@@ -33,7 +33,7 @@ const Approach = () => {
                     <div className="bg-white rounded-3xl p-8 cursor-pointer">
                         <div className="flex flex-col sm:flex-row gap-6 items-start mb-6">
                             <img
-                                src="/founder.jpg"
+                                src="/founder_update.jpg"
                                 alt="Jane Kalu Ndukwe"
                                 className="w-24 h-24 rounded-2xl object-cover flex-shrink-0"
                             />
