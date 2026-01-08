@@ -8,6 +8,7 @@ import Programs from './components/sections/Programs';
 import Approach from './components/sections/Approach';
 import ImpactData from './components/sections/ImpactData';
 import AudienceCards from './components/sections/AudienceCards';
+import Campaign from './components/sections/Campaign';
 import Newsletter from './components/sections/Newsletter';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Approach />
         <ImpactData />
         <AudienceCards />
+        <Campaign />
         <Newsletter />
       </main>
       <Footer />

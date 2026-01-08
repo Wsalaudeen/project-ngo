@@ -61,9 +61,9 @@ const AudienceCards = () => {
                         <p className="text-2xl md:text-3xl font-bold mb-10 leading-snug">
                             Together, we can build a society where respect leads, conscience protects, and character inspires
                         </p>
-                        <button className="bg-white text-primary-700 font-bold py-4 px-10 rounded-xl hover:bg-primary-50 transition-colors shadow-lg">
+                        <a href="#contact" className="bg-white text-primary-700 font-bold py-4 px-10 rounded-xl hover:bg-primary-50 transition-colors shadow-lg inline-block">
                             Contact Us Today
-                        </button>
+                        </a>
                     </div>
                 </div>
 

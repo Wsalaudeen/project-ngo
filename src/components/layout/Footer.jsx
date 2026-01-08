@@ -42,7 +42,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
-                    <p>© 2025 Etiquette and Social Values Organization (ESVO). All rights reserved.</p>
+                    <p>© 2025-2026 Etiquette and Social Values Organization (ESVO). All rights reserved.</p>
                 </div>
             </Container>
         </footer>

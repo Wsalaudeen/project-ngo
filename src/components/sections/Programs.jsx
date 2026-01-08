@@ -76,7 +76,7 @@ const Programs = () => {
                             </div>
                             <div>
                                 <h3 className="text-2xl font-bold mb-1">Civility Improvement Initiative</h3>
-                                <div className="text-primary-200 text-sm font-medium">Good Manners & Humanity Campaign</div>
+                                <div className="text-primary-200 text-sm font-medium"></div>
                             </div>
                         </div>
 
