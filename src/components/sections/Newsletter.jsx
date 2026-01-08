@@ -14,12 +14,7 @@ const Newsletter = () => {
         <section className="py-20 bg-white" id="contact">
             <Container>
                 {/* Header */}
-                <div className="text-center max-w-4xl mx-auto mb-16">
-                    <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-6 block">Contact Us</h2>
-                    <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-                        Let's work together to build a more civil and respectful society
-                    </p>
-                </div>
+
 
                 {/* Contact Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">

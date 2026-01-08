@@ -9,7 +9,7 @@ const Programs = () => {
             <Container>
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-6 block">Our Programs</h2>
+                    <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-6 block">Our Signature Tool Kits</h2>
                     <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
                         Comprehensive toolkits and initiatives designed to cultivate values, character, and responsible leadership
                     </p>
@@ -91,7 +91,7 @@ const Programs = () => {
                                     Across many sectors, declining standards of conduct, limited emotional intelligence, and weakened value systems are affecting learning environments, service delivery, leadership effectiveness, and social cohesion. When respect erodes, trust breaks down, and communities suffer.
                                 </p>
                                 <p className="text-base text-primary-100 leading-relaxed">
-                                    This initiative responds by addressing behaviour at its root. Through practical tool kits, structured mentorship, and value-based engagement, ESVO equips individuals and institutions with the skills and mindset needed to foster respectful relationships, humane leadership, and safer, more inclusive environments.
+                                    This initiative responds by addressing behavior at its root. ESVO equips individuals and institutions with the mindset needed to foster respectful relationships, and safer, more inclusive environments.
                                 </p>
                             </div>
 

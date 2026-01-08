@@ -8,17 +8,17 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    50: '#f4f2ff',
-                    100: '#ebe6ff',
-                    200: '#d9d1ff',
-                    300: '#bba6ff',
-                    400: '#9875ff',
-                    500: '#7645ff',
-                    600: '#5c2ed6',  // Adjusted for good button contrast
-                    700: '#461fa3',
-                    800: '#321475',
-                    900: '#12003A',  // The requested brand color
-                    950: '#08001f',
+                    50: '#eff6ff',
+                    100: '#dbeafe',
+                    200: '#bfdbfe',
+                    300: '#93c5fd',
+                    400: '#60a5fa',
+                    500: '#3b82f6',
+                    600: '#2563eb',
+                    700: '#1d4ed8',
+                    800: '#1e40af',
+                    900: '#1e3a8a',
+                    950: '#172554',
                 },
                 secondary: '#f59e0b', // Amber/Orange for highlights
             },

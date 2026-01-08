@@ -22,7 +22,7 @@ const ValuesStats = () => {
                     </p>
 
                     <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-                        Through mentorship, values-based education, and leadership development, ESVO equips individuals to act with empathy, integrity, and purpose creating environments where minors and vulnerable persons are valued and protected.
+                        Through mentorship and structured monitoring, ESVO equips individuals to act with empathy, integrity, and purpose; creating environments where minors and vulnerable persons are valued and protected.
                     </p>
                 </div>
 
