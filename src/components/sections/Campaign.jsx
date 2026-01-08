@@ -19,23 +19,17 @@ const Campaign = () => {
                         Help Us Nurture a Kinder Society
                     </h2>
 
-                    <div className="space-y-4 text-lg md:text-xl text-slate-700 font-medium max-w-2xl mx-auto">
-                        <p>Imagine children growing up with respect.</p>
-                        <p>Leaders shaped by kindness.</p>
-                        <p>Communities guided by empathy.</p>
+                    <div className="text-lg md:text-xl text-slate-700 font-medium max-w-2xl mx-auto">
+                        <p>Where children grow up with respect. Leaders are shaped by kindness. Communities are guided by empathy.</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-20 relative z-10">
                     {/* Left Column: Context & Vision */}
                     <div>
-                        <div className="prose prose-lg text-slate-600 mb-10">
-                            <p className="leading-relaxed">
-                                That is the heart of the <strong className="text-primary-800">Civility Improvement Initiative Campaign 2026</strong>—a movement restoring civility, refinement, and human dignity across schools, higher institutions, care homes, and healthcare facilities in South East Nigeria.
-                            </p>
-                        </div>
 
-                        <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 mb-8">
+
+                        <div className="bg-white rounded-3xl p-8 shadow-sm mb-8">
                             <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
                                 <span className="p-2 bg-yellow-100 text-yellow-700 rounded-lg mr-3">
                                     <Heart size={20} fill="currentColor" />
@@ -80,7 +74,7 @@ const Campaign = () => {
                                 <div className="text-2xl font-bold">₦18,000</div>
                             </div>
 
-                            <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-primary-300 transition-colors duration-300 hover:scale-[1.02]">
+                            <div className="bg-white rounded-2xl p-6 flex flex-col justify-between transition-colors duration-300 hover:scale-[1.02]">
                                 <div>
                                     <h4 className="font-bold text-slate-900 text-lg mb-1">Humanity & Refinement Tool Kit</h4>
                                     <p className="text-slate-500 text-sm mb-4">For professionals & caregivers</p>
