@@ -52,18 +52,21 @@ const Newsletter = () => {
                 <div className="text-center">
                     <h3 className="text-slate-500 font-medium mb-8">Follow us on social media</h3>
                     <div className="flex justify-center gap-6">
-                        {socialLinks.map(({ icon: Icon, href, label }, idx) => (
-                            <a
-                                key={idx}
-                                href={href}
-                                target={href.startsWith('http') ? "_blank" : undefined}
-                                rel={href.startsWith('http') ? "noopener noreferrer" : undefined}
-                                aria-label={label}
-                                className="w-12 h-12 bg-slate-100 text-slate-500 rounded-full flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all duration-300"
-                            >
-                                <Icon size={20} strokeWidth={1.5} />
-                            </a>
-                        ))}
+                        {socialLinks.map((link, idx) => {
+                            const Icon = link.icon;
+                            return (
+                                <a
+                                    key={idx}
+                                    href={link.href}
+                                    target={link.href.startsWith('http') ? "_blank" : undefined}
+                                    rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                                    aria-label={link.label}
+                                    className="w-12 h-12 bg-slate-100 text-slate-500 rounded-full flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all duration-300"
+                                >
+                                    <Icon size={20} strokeWidth={1.5} />
+                                </a>
+                            );
+                        })}
                     </div>
                 </div>
             </Container>

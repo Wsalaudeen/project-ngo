@@ -3,6 +3,8 @@ import Section from '../common/Section';
 import Container from '../common/Container';
 import { HeartHandshake, Handshake, School } from 'lucide-react';
 
+import { Link } from 'react-router-dom';
+
 const AudienceCards = () => {
     const cards = [
         {
@@ -10,18 +12,21 @@ const AudienceCards = () => {
             desc: 'Join our outreaches and make a direct impact in communities',
             icon: HeartHandshake,
             btn: 'Join Us',
+            link: '/volunteer',
         },
         {
             title: 'Partner or Sponsor',
             desc: 'Support our programmes and help us reach more people',
             icon: Handshake,
             btn: 'Partner with ESVO',
+            link: '/partner',
         },
         {
             title: 'Invite ESVO',
             desc: 'Bring our values-based education to your school or organization',
             icon: School,
             btn: 'Invite Us',
+            link: '/invite',
         }
     ];
 
@@ -47,9 +52,15 @@ const AudienceCards = () => {
                             <p className="text-slate-500 mb-8 leading-relaxed px-2">
                                 {card.desc}
                             </p>
-                            <button className="bg-primary-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-primary-800 transition-colors w-full sm:w-auto">
-                                {card.btn}
-                            </button>
+                            {card.link ? (
+                                <Link to={card.link} className="bg-primary-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-primary-800 transition-colors w-full sm:w-auto inline-block">
+                                    {card.btn}
+                                </Link>
+                            ) : (
+                                <button className="bg-primary-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-primary-800 transition-colors w-full sm:w-auto">
+                                    {card.btn}
+                                </button>
+                            )}
                         </div>
                     ))}
                 </div>
