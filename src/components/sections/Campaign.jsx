@@ -85,7 +85,7 @@ const Campaign = () => {
                                     <h4 className="font-bold text-slate-900 text-lg mb-1">Humanity & Refinement Tool Kit</h4>
                                     <p className="text-slate-500 text-sm mb-4">For professionals & caregivers</p>
                                 </div>
-                                <div className="text-2xl font-bold text-primary-700">₦25,000</div>
+                                <div className="text-2xl font-bold text-primary-700">₦30,000</div>
                             </div>
                         </div>
 
