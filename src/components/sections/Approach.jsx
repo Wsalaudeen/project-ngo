@@ -43,7 +43,7 @@ const Approach = () => {
                                 Through the Civility Improvement Initiative, the Good Manners Toolkit, and the Humanity and Refinement Toolkit, we work with schools, universities, care homes, and healthcare facilities to restore civility, respect, and human dignity.
                             </p>
                             <p>
-                                Supported by mentorship and structured monitoring, we helps institutions become spaces where kindness is intentional, respect is practiced, and every individual matters.
+                                Supported by mentorship and structured monitoring, we help institutions become spaces where kindness is intentional, respect is practiced, and every individual matters.
                             </p>
                             <p className="text-primary-800 font-medium italic">
                                 Join us in building a more civil, humane, and respectful society; one interaction at a time.
