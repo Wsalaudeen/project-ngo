@@ -67,8 +67,15 @@ const Team = () => {
         {
             name: 'Kaitlin Gee-Akwada',
             role: 'Head, Corporate Communications & PR / Board Secretary',
-            image: 'https://ui-avatars.com/api/?name=Kaitlin+Gee+Akwada&background=0D9488&color=fff&size=512',
+            image: '/kaitlin_new.jpg',
             initials: 'KG'
+        },
+        {
+            name: 'Mr. Kalu K. Ndukwe',
+            role: 'Head, Finance and Administration',
+            bio: 'Chartered Auditor and Professional Payroll Accounting for Proprietors',
+            image: '/kalu_ndukwe.jpg',
+            initials: 'KN'
         }
     ];
 
@@ -94,13 +101,7 @@ const Team = () => {
             image: '/jim_steinke.jpg',
             initials: 'JS'
         },
-        {
-            name: 'Mrs. Roseline Afolabi',
-            role: 'Board Patron',
-            bio: 'Education Consultant and Linguist, Lagos',
-            image: 'https://ui-avatars.com/api/?name=Mrs+Roseline+Afolabi&background=0f172a&color=fff&size=512',
-            initials: 'RA'
-        }
+
     ];
 
     return (
@@ -115,8 +116,8 @@ const Team = () => {
                 </div>
 
                 <TeamSection title="Executive Leadership" members={executives} gridCols="md:grid-cols-1 justify-items-center max-w-sm mx-auto" />
-                <TeamSection title="Management Team" members={management} gridCols="md:grid-cols-2 lg:grid-cols-2 max-w-2xl mx-auto" />
-                <TeamSection title="Board of Patrons" members={patrons} />
+                <TeamSection title="Management Team" members={management} gridCols="md:grid-cols-2 lg:grid-cols-3" />
+                <TeamSection title="Board of Patrons" members={patrons} gridCols="md:grid-cols-2 lg:grid-cols-3" />
 
             </Container>
         </Section>
