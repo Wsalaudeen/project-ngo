@@ -95,9 +95,9 @@ const Team = () => {
             initials: 'IN'
         },
         {
-            name: 'Hon. Jim Steinke',
+            name: 'Jim Steinke',
             role: 'Board Patron',
-            bio: 'Counselor at Sheffield City Council, UK',
+            bio: 'Director JFS Consultancy, Ex-Councillor Sheffield City Council U.K., Ex-Chief Executive Northern Refugee Centre U.K.',
             image: '/jim_steinke.jpg',
             initials: 'JS'
         },
