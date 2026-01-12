@@ -47,8 +47,13 @@ const Invite = () => {
                             <p className="text-lg text-primary-100 mb-10 leading-relaxed">
                                 Do not allow a toxic environment to persist. Get in touch with us today to begin creating a more respectful, humane, and thriving community.
                             </p>
-                            <a href="#contact" className="inline-flex items-center bg-white text-primary-900 font-bold py-4 px-8 rounded-xl hover:bg-primary-50 transition-colors">
-                                Get in Touch Today
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeqL72fQQY0-yg-4-1yqbtOTX_CerptyaGUH2We5mz6Q--CNQ/viewform?usp=header"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center bg-white text-primary-900 font-bold py-4 px-8 rounded-xl hover:bg-primary-50 transition-colors"
+                            >
+                                Fill Expression of Interest Form
                                 <ArrowRight className="ml-2" size={20} />
                             </a>
                         </div>
