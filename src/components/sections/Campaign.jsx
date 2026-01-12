@@ -128,7 +128,7 @@ const Campaign = () => {
                                         </div>
                                         <div>
                                             <div className="text-sm text-slate-400">Phone</div>
-                                            <div className="text-lg font-medium">____________________________</div>
+                                            <div className="text-lg font-medium">+234 806 603 8421</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center">
@@ -137,7 +137,7 @@ const Campaign = () => {
                                         </div>
                                         <div>
                                             <div className="text-sm text-slate-400">Email</div>
-                                            <div className="text-lg font-medium">____________________________</div>
+                                            <div className="text-lg font-medium">info@esvo.org</div>
                                         </div>
                                     </div>
                                 </div>

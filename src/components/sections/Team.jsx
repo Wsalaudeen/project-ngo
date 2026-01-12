@@ -52,7 +52,7 @@ const Team = () => {
         {
             name: 'Lady Jane Kalu Ndukwe',
             role: 'Chief Executive Officer (CEO)',
-            image: '/ceo_latest.jpg', // Updated CEO image
+            image: '/ceo_v2.jpg', // Updated CEO image
             bio: 'Founder, ESVO'
         }
     ];
