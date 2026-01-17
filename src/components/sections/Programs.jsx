@@ -2,6 +2,8 @@ import React from 'react';
 import { Package, Briefcase, Globe } from 'lucide-react';
 import Section from '../common/Section';
 import Container from '../common/Container';
+import GoodMannersImg from '../../assets/good-manners-kit.jpg';
+import HumanityKitImg from '../../assets/humanity-kit.jpg';
 
 const Programs = () => {
     return (
@@ -15,48 +17,88 @@ const Programs = () => {
                     </p>
                 </div>
 
-                {/* Top Cards Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                    {/* Card 1: Good Manners */}
-                    <div className="bg-white rounded-3xl p-10 cursor-pointer">
-                        <div className="flex items-start justify-between mb-8">
-                            <div className="w-14 h-14 bg-primary-50 text-primary-600 rounded-2xl flex items-center justify-center">
-                                <Package size={28} strokeWidth={1.5} />
+                {/* Content Container */}
+                <div className="space-y-24 mb-24">
+                    {/* Item 1: Good Manners (Image Left, Text Right) */}
+                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+                        {/* Image Side */}
+                        <div className="w-full lg:w-5/12">
+                            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 group max-w-lg mx-auto lg:max-w-none">
+                                <div className="absolute inset-0 bg-primary-900/10 group-hover:bg-transparent transition-colors duration-300"></div>
+                                <img
+                                    src={GoodMannersImg}
+                                    alt="The Good Manners Tool Kit"
+                                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                />
                             </div>
-                            <span className="inline-block py-1.5 px-4 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold tracking-wide">
-                                Ages 7-13
-                            </span>
                         </div>
 
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">The Good Manners Tool Kit</h3>
-                        <p className="text-slate-500 text-sm mb-8">
-                            Shaping courteous, confident, and emotionally aware children
-                        </p>
+                        {/* Text Side */}
+                        <div className="w-full lg:w-7/12">
+                            <div className="flex items-center gap-4 mb-6">
+                                <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-50 text-primary-600">
+                                    <Package size={24} strokeWidth={1.5} />
+                                </span>
+                                <span className="py-1.5 px-4 rounded-full bg-primary-50 text-primary-700 text-sm font-semibold tracking-wide">
+                                    Ages 7-13
+                                </span>
+                            </div>
 
-                        <p className="text-slate-600 leading-relaxed text-sm">
-                            An engaging toolkit that helps children embrace respect, consideration, and kindness through stories, games, roleplay, reflection, and creative expression.
-                        </p>
+                            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                                The Good Manners Tool Kit
+                            </h3>
+
+                            <p className="text-xl text-slate-500 font-medium mb-6">
+                                Shaping courteous, confident, and emotionally aware children
+                            </p>
+
+                            <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                                An engaging toolkit that helps children embrace respect, consideration, and kindness through stories, games, roleplay, reflection, and creative expression.
+                            </p>
+
+
+                        </div>
                     </div>
 
-                    {/* Card 2: Humanity & Refinement */}
-                    <div className="bg-white rounded-3xl p-10 cursor-pointer">
-                        <div className="flex items-start justify-between mb-8">
-                            <div className="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center">
-                                <Briefcase size={28} strokeWidth={1.5} />
+                    {/* Item 2: Humanity & Refinement (Text Left, Image Right) */}
+                    <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24">
+                        {/* Text Side */}
+                        <div className="w-full lg:w-7/12">
+                            <div className="flex items-center gap-4 mb-6">
+                                <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-amber-50 text-amber-600">
+                                    <Briefcase size={24} strokeWidth={1.5} />
+                                </span>
+                                <span className="py-1.5 px-4 rounded-full bg-amber-50 text-amber-700 text-sm font-semibold tracking-wide">
+                                    Leaders, Educators & Caregivers
+                                </span>
                             </div>
-                            <span className="inline-block py-1.5 px-4 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold tracking-wide">
-                                Leaders, Educators & Caregivers
-                            </span>
+
+                            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                                The Humanity and Refinement Tool Kit
+                            </h3>
+
+                            <p className="text-xl text-slate-500 font-medium mb-6">
+                                For professionals working with minors and vulnerable persons
+                            </p>
+
+                            <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                                Equips teams to lead and serve with conscience, courtesy, emotional intelligence, and accountability fostering refined behaviour and positive institutional culture.
+                            </p>
+
+
                         </div>
 
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">The Humanity and Refinement Tool Kit</h3>
-                        <p className="text-slate-500 text-sm mb-8">
-                            For professionals working with minors and vulnerable persons
-                        </p>
-
-                        <p className="text-slate-600 leading-relaxed text-sm">
-                            Equips teams to lead and serve with conscience, courtesy, emotional intelligence, and accountability fostering refined behaviour and positive institutional culture.
-                        </p>
+                        {/* Image Side */}
+                        <div className="w-full lg:w-5/12">
+                            <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 group max-w-lg mx-auto lg:max-w-none">
+                                <div className="absolute inset-0 bg-amber-900/5 group-hover:bg-transparent transition-colors duration-300"></div>
+                                <img
+                                    src={HumanityKitImg}
+                                    alt="The Humanity and Refinement Tool Kit"
+                                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
