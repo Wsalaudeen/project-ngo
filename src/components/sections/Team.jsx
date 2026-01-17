@@ -20,6 +20,7 @@ const TeamMember = ({ member }) => (
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <div className="flex gap-4 justify-center text-white">
                     {/* Placeholder links - can be updated with real links later */}
+
                     <button className="hover:text-primary-300 transition-colors"><Mail size={20} /></button>
                 </div>
             </div>
@@ -29,6 +30,17 @@ const TeamMember = ({ member }) => (
             <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
             <p className="text-primary-600 font-medium text-sm tracking-wide uppercase mb-3">{member.role}</p>
             {member.bio && <p className="text-slate-500 text-sm leading-relaxed">{member.bio}</p>}
+            {member.linkedin && (
+                <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium text-sm mt-3 transition-colors"
+                >
+                    <Linkedin size={16} />
+                    <span>Read More</span>
+                </a>
+            )}
         </div>
     </div>
 );
@@ -85,7 +97,8 @@ const Team = () => {
             role: 'Board Patron',
             bio: 'Chief Executive and MD, Crispy Nigeria Limited, Ndafia Restaurant and Stores, and KAN Biscuits, Aba',
             image: '/chief_kalu.jpg',
-            initials: 'CK'
+            initials: 'CK',
+            linkedin: 'https://www.linkedin.com/posts/etiquette-and-social-values-organization-esvo_today-i-am-honoured-to-showcase-the-grand-activity-7416498661385302017--W7a?utm_source=share&utm_medium=member_android&rcm=ACoAACkxuGEBupSd4xtGK2LqgnMk-_Xye3COUO4'
         },
         {
             name: 'Dr. Ifendu A. Nnanna',
