@@ -27,14 +27,14 @@ const Invite = () => {
                             </p>
                         </div>
 
-                        {/* Organization Section */}
+                        {/* Organization & Community Section */}
                         <div className="bg-slate-50 rounded-3xl p-10 flex flex-col h-full cursor-pointer hover:shadow-md transition-all duration-300">
                             <div className="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
                                 <Building size={28} strokeWidth={1.5} />
                             </div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-4">For Organisations</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-4">For Organizations and Communities</h3>
                             <p className="text-slate-700 leading-relaxed mb-6 flex-grow">
-                                Are you experiencing high staff turnover or declining team morale in your organisation? Our Humanity and Refinement Toolkit addresses these challenges by equipping teams with conscience-based leadership and emotional intelligence for healthier relationships and improved workplace culture.
+                                Are you experiencing high staff turnover or declining team morale in your organization or community leadership? For healthier relationships, team building and improved workplace culture.
                             </p>
                         </div>
                     </div>

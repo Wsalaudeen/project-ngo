@@ -34,7 +34,7 @@ const Footer = () => {
                         <h4 className="text-white text-lg font-semibold mb-6">Contact</h4>
                         <ul className="space-y-4 text-slate-400">
                             <li>Coal City Garden Estate, Enugu.</li>
-                            <li>info@esvo.org</li>
+                            <li>esvoafrica@gmail.com</li>
                             <li>+234 806 603 8421</li>
                         </ul>
                     </div>

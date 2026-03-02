@@ -17,7 +17,7 @@ const Volunteer = () => {
                             </p>
 
                             <p>
-                                Our volunteers support outreach to schools, universities, care homes, and healthcare facilities by delivering our Good Manners Toolkit and Humanity and Refinement Toolkit, mentoring participants, and supporting programme implementation.
+                                Our volunteers support outreach to communities, schools and care institutions by delivering our Good Manners Toolkit and Humanity and Refinement Toolkit, mentoring participants, and supporting programme implementation.
                             </p>
 
 

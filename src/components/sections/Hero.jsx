@@ -45,8 +45,22 @@ const Hero = () => {
                         Restoring civility and moral consciousness in homes, schools, institutions, and communities through values-based education.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
-                        <Button variant="primary" className="w-full sm:w-auto px-10 h-14 text-lg shadow-lg shadow-primary-200">Our Programs</Button>
-                        <Button variant="outline" className="w-full sm:w-auto px-10 h-14 text-lg">Learn More</Button>
+                        <a href="#programs">
+                            <Button
+                                variant="primary"
+                                className="w-full sm:w-auto px-10 h-14 text-lg shadow-lg shadow-primary-200"
+                            >
+                                Our Programs
+                            </Button>
+                        </a>
+                        <a href="#about">
+                            <Button
+                                variant="outline"
+                                className="w-full sm:w-auto px-10 h-14 text-lg"
+                            >
+                                Learn More
+                            </Button>
+                        </a>
                     </div>
                 </div>
 

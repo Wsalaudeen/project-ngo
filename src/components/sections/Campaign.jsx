@@ -137,7 +137,7 @@ const Campaign = () => {
                                         </div>
                                         <div>
                                             <div className="text-sm text-slate-400">Email</div>
-                                            <div className="text-lg font-medium">info@esvo.org</div>
+                                            <div className="text-lg font-medium">esvoafrica@gmail.com</div>
                                         </div>
                                     </div>
                                 </div>

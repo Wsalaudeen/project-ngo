@@ -48,7 +48,7 @@ const Partner = () => {
 
                         <div className="prose prose-lg mx-auto text-slate-600 leading-relaxed">
                             <p className="mb-6">
-                                The ESVO Civility Improvement Initiative is dedicated to restoring civility, respect, and humane leadership in schools and institutions through practical toolkits, mentorship, and structured monitoring.
+                                The ESVO Civility Improvement Initiative is dedicated to restoring civility, respect, and human leadership in communities, schools and institutions through practical toolkits, mentorship, and structured monitoring.
                             </p>
                             <p className="text-lg font-medium text-slate-800">
                                 Your support transforms everyday environments into spaces where respect is practiced, character is strengthened, and human dignity is upheld.

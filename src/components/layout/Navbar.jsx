@@ -32,11 +32,13 @@ const Navbar = () => {
             : "text-slate-600 hover:text-primary-600 font-medium transition-colors";
 
         if (link.to) {
+            const isActive = location.pathname === link.to;
             return (
                 <Link
                     key={link.name}
                     to={link.to}
                     className={className}
+                    aria-current={isActive ? "page" : undefined}
                     onClick={() => setIsOpen(false)}
                 >
                     {link.name}
@@ -60,7 +62,10 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+        <nav
+            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}
+            aria-label="Main navigation"
+        >
             <Container>
                 <div className="flex justify-between items-center py-2">
                     <div className="flex-shrink-0 flex flex-col justify-center">
@@ -83,9 +88,12 @@ const Navbar = () => {
 
                     <div className="md:hidden flex items-center">
                         <button
+                            type="button"
                             onClick={() => setIsOpen(!isOpen)}
                             className="text-slate-600 hover:text-primary-600 p-2 focus:outline-none"
-                            aria-label="Toggle menu"
+                            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                            aria-expanded={isOpen}
+                            aria-controls="mobile-navigation"
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -95,7 +103,12 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div className="md:hidden bg-white shadow-lg absolute w-full left-0 top-full border-t border-slate-100">
+                <div
+                    id="mobile-navigation"
+                    className="md:hidden bg-white shadow-lg absolute w-full left-0 top-full border-t border-slate-100"
+                    role="dialog"
+                    aria-modal="true"
+                >
                     <div className="px-4 pt-4 pb-6 space-y-3">
                         {navLinks.map((link) => renderLink(link, true))}
                         <div className="pt-2">
