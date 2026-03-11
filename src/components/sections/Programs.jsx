@@ -78,7 +78,7 @@ const Programs = () => {
                             </h3>
 
                             <p className="text-xl text-slate-500 font-medium mb-6">
-                                For professionals working with minors and vulnerable persons
+                                For leaders and professionals working with minors and vulnerable persons
                             </p>
 
                             <p className="text-slate-600 text-lg leading-relaxed mb-8">

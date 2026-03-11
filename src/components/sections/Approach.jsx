@@ -12,7 +12,7 @@ const Approach = () => {
                 {/* Header */}
                 <div className="text-center max-w-4xl mx-auto mb-12">
                     <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-4 block">About ESVO</h2>
-                    <h3 className="text-3xl md:text-4xl font-bold text-primary-900 mb-6">Founder's Message</h3>
+                    <h3 className="text-3xl md:text-4xl font-bold text-primary-900 mb-6">Founder’s Message</h3>
                 </div>
 
                 {/* Founder's Message Content */}
@@ -27,26 +27,25 @@ const Approach = () => {
 
                         <div className="prose prose-lg text-slate-700 relative z-10 leading-relaxed space-y-6">
                             <p className="font-medium text-lg text-slate-900">
-                                Imagine a student going to school each day feeling invisible and unheard.
+                                A community without conscience and respect for human dignity cannot thrive. Where respect is absent, safety erodes, voices are silenced, and growth is stifled.
                             </p>
                             <p className="font-medium text-lg text-slate-900">
-                                Imagine a patient spoken to harshly and left unattended.
+                                Picture a student who goes to school each day feeling unseen and unheard.
                             </p>
                             <p className="font-medium text-lg text-slate-900">
-                                Picture a vulnerable person in a care home treated without dignity or compassion.
-                            </p>
-
-                            <p>
-                                These realities are why the Etiquette and Social Values Organization (ESVO) was founded.
+                                Imagine homes where care and civility are missing—what kind of society do they shape?
                             </p>
                             <p>
-                                Through the Civility Improvement Initiative, the Good Manners Toolkit, and the Humanity and Refinement Toolkit, we work with schools, universities, care homes, and healthcare facilities to restore civility, respect, and human dignity.
+                                Respect is the foundation of meaningful relationships and responsible citizenship. It is through respect that trust is built, ideas flourish, and communities prosper.
                             </p>
                             <p>
-                                Supported by mentorship and structured monitoring, we help institutions become spaces where kindness is intentional, respect is practiced, and every individual matters.
+                                When children are taught respect and adults model humane conduct, society gains direction, purpose, and hope.
+                            </p>
+                            <p>
+                                This conviction gave birth to the Etiquette and Social Values Organization (ESVO)—a movement committed to restoring values and rebuilding communities that are safe, compassionate, and productive.
                             </p>
                             <p className="text-primary-800 font-medium italic">
-                                Join us in building a more civil, humane, and respectful society; one interaction at a time.
+                                Join us. Partner with ESVO to teach, model, and champion respect in our communities, schools, homes, and institutions. Together, we can raise a generation defined by dignity, responsibility, and excellence.
                             </p>
                         </div>
                     </div>
