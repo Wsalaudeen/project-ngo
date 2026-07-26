@@ -63,9 +63,8 @@ const Team = () => {
     const executives = [
         {
             name: 'Lady Jane Kalu Ndukwe',
-            role: 'Chief Executive Officer (CEO)',
-            image: '/ceo_v2.jpg', // Updated CEO image
-            bio: 'Founder, ESVO'
+            role: 'Executive Director and Founder, ESVO',
+            image: '/ceo_v2.jpg' // Updated CEO image
         }
     ];
 

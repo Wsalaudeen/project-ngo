@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from '../common/Container';
-import { Heart, CheckCircle, Gift, CreditCard, Phone, Mail } from 'lucide-react';
+import { Heart, CheckCircle, Gift, CreditCard, Phone, Mail, Copy, Check } from 'lucide-react';
 
 const Campaign = () => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopyAccountNumber = async () => {
+        try {
+            await navigator.clipboard.writeText('1986721334');
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        } catch (err) {
+            console.error('Failed to copy account number', err);
+        }
+    };
+
     return (
         <section className="py-20 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden" id="campaign">
             {/* Background Decoration */}
@@ -71,7 +83,7 @@ const Campaign = () => {
                                     <h4 className="font-bold text-lg mb-1">Good Manners Tool Kit</h4>
                                     <p className="text-primary-200 text-sm mb-4">For children</p>
                                 </div>
-                                <div className="text-2xl font-bold">₦18,000</div>
+                                <div className="text-2xl font-bold">₦17,000</div>
                             </div>
 
                             <div className="bg-white rounded-2xl p-6 flex flex-col justify-between transition-colors duration-300 hover:scale-[1.02]">
@@ -79,7 +91,7 @@ const Campaign = () => {
                                     <h4 className="font-bold text-slate-900 text-lg mb-1">Humanity & Refinement Tool Kit</h4>
                                     <p className="text-slate-500 text-sm mb-4">For professionals & caregivers</p>
                                 </div>
-                                <div className="text-2xl font-bold text-primary-700">₦30,000</div>
+                                <div className="text-2xl font-bold text-primary-700">₦28,000</div>
                             </div>
                         </div>
 
@@ -104,15 +116,25 @@ const Campaign = () => {
                             <div className="space-y-6 text-slate-300">
                                 <div>
                                     <div className="text-sm text-slate-400 uppercase tracking-wider font-semibold mb-1">Account Name</div>
-                                    <div className="text-xl font-mono text-white bg-slate-800/50 p-3 rounded-lg border border-slate-700 inline-block min-w-[250px]">____________________</div>
+                                    <div className="text-xl font-sans text-white bg-slate-800/50 p-3 rounded-lg border border-slate-700 inline-block min-w-[250px]">Etiquette and social values organizations</div>
                                 </div>
                                 <div>
                                     <div className="text-sm text-slate-400 uppercase tracking-wider font-semibold mb-1">Bank</div>
-                                    <div className="text-xl font-mono text-white bg-slate-800/50 p-3 rounded-lg border border-slate-700 inline-block min-w-[250px]">____________________</div>
+                                    <div className="text-xl font-sans text-white bg-slate-800/50 p-3 rounded-lg border border-slate-700 inline-block min-w-[250px]">Access Bank</div>
                                 </div>
                                 <div>
                                     <div className="text-sm text-slate-400 uppercase tracking-wider font-semibold mb-1">Account Number</div>
-                                    <div className="text-3xl font-mono text-white tracking-widest bg-slate-800/50 p-3 rounded-lg border border-slate-700 inline-block min-w-[250px]">__________________</div>
+                                    <div className="flex flex-wrap items-center gap-3">
+                                        <div className="text-3xl font-sans text-white tracking-widest bg-slate-800/50 p-3 rounded-lg border border-slate-700 inline-block min-w-[250px]">1986721334</div>
+                                        <button
+                                            type="button"
+                                            onClick={handleCopyAccountNumber}
+                                            className="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800/70 px-3 py-2 text-sm text-slate-100 transition-colors hover:bg-slate-700"
+                                        >
+                                            {copied ? <Check size={16} className="mr-2 text-green-400" /> : <Copy size={16} className="mr-2" />}
+                                            {copied ? 'Copied' : 'Copy'}
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +166,7 @@ const Campaign = () => {
                             </div>
 
                             <div className="mt-12 pt-8 border-t border-white/10">
-                                <p className="text-xl font-serif italic text-primary-100/90 text-center">
+                                <p className="text-xl font-sans italic text-primary-100/90 text-center">
                                     "Together, we can raise better humans and build a more civil society—one life at a time."
                                 </p>
                                 <div className="text-center mt-4 font-bold tracking-widest uppercase text-sm text-white/50">
