@@ -11,7 +11,7 @@ const Footer = () => {
                         <img
                             src="/footer_logo_v2.jpg"
                             alt="ESVO Logo"
-                            className="w-40 h-auto rounded-xl mb-6"
+                            className="w-40 h-auto mb-6 object-contain"
                         />
                         <p className="text-slate-400 leading-relaxed text-sm max-w-md">
                             Restoring civility and moral consciousness through values-based education in homes, schools, and communities.

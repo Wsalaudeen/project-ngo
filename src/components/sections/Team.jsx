@@ -4,7 +4,7 @@ import Container from '../common/Container';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
 
 const TeamMember = ({ member }) => (
-    <div className="group relative">
+    <div className="group relative cursor-pointer">
         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 shadow-lg bg-slate-100">
             {member.image ? (
                 <img

@@ -9,7 +9,40 @@ const Programs = () => {
     return (
         <Section id="programs" className="bg-white">
             <Container>
-                {/* Header */}
+                {/* Our Programs */}
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                    <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-6 block">Our Programs</h2>
+                    <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
+                        Purpose-driven initiatives designed to build respectful schools, confident youth leaders, and a culture of civility.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+                    {[
+                        {
+                            title: 'Respectful Schools Programme',
+                            description: 'An Anti-bullying Programme promoting Safe, Inclusive Learning Systems'
+                        },
+                        {
+                            title: 'Young Ambassadors of Respect Summit',
+                            description: 'A platform for youth leadership, dialogue, and advocacy for values-based citizenship.'
+                        },
+                        {
+                            title: 'Ambassador of Respect Programme',
+                            description: 'Featuring the 21-Day Civility Challenge.'
+                        }
+                    ].map((program, index) => (
+                        <div key={index} className="rounded-3xl border border-slate-200 bg-primary-50/50 p-8 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary-100 text-primary-700 mb-6">
+                                <Package size={24} strokeWidth={1.5} />
+                            </div>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-4 leading-tight">{program.title}</h3>
+                            <p className="text-slate-600 text-lg leading-relaxed">{program.description}</p>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Signature Tool Kits Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-slate-900 font-bold tracking-wide text-2xl mb-6 block">Our Signature Tool Kits</h2>
                     <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
@@ -20,7 +53,7 @@ const Programs = () => {
                 {/* Content Container */}
                 <div className="space-y-24 mb-24">
                     {/* Item 1: Good Manners (Image Left, Text Right) */}
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 cursor-pointer">
                         {/* Image Side */}
                         <div className="w-full lg:w-5/12">
                             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 group max-w-lg mx-auto lg:max-w-none">
@@ -61,7 +94,7 @@ const Programs = () => {
                     </div>
 
                     {/* Item 2: Humanity & Refinement (Text Left, Image Right) */}
-                    <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24">
+                    <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24 cursor-pointer">
                         {/* Text Side */}
                         <div className="w-full lg:w-7/12">
                             <div className="flex items-center gap-4 mb-6">
