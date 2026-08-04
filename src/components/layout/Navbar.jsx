@@ -68,14 +68,13 @@ const Navbar = () => {
         >
             <Container>
                 <div className="flex justify-between items-center py-2">
-                    <div className="flex-shrink-0 flex flex-col justify-center">
-                        <Link to="/" className="cursor-pointer">
-                            <h1 className="text-3xl md:text-4xl font-extrabold text-primary-900 tracking-tight">
-                                ESVO
-                            </h1>
-                            <p className="text-xs md:text-sm text-primary-700 font-medium tracking-wide">
-                                Think Right, Act Right, Live Right.
-                            </p>
+                    <div className="flex-shrink-0">
+                        <Link to="/" className="inline-flex items-center">
+                            <img
+                                src="/footer_logo_new.jpg"
+                                alt="ESVO logo"
+                                className="h-12 w-auto"
+                            />
                         </Link>
                     </div>
 
