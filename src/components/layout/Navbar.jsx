@@ -71,9 +71,9 @@ const Navbar = () => {
                     <div className="flex-shrink-0">
                         <Link to="/" className="inline-flex items-center">
                             <img
-                                src="/footer_logo_new.jpg"
+                                src="/esvoLogo1.png"
                                 alt="ESVO logo"
-                                className="h-12 w-auto"
+                                className="h-16 w-auto shake-logo transition-transform duration-200"
                             />
                         </Link>
                     </div>
