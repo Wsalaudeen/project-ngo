@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Button from '../common/Button';
 import Container from '../common/Container';
 
 const Hero = () => {
-    const [currentImage, setCurrentImage] = React.useState(0);
-
+    const [currentImage, setCurrentImage] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
 
     const images = [
         "/hero_1.jpg",
@@ -14,16 +15,21 @@ const Hero = () => {
         "/hero_5.jpg"
     ];
 
-
-
-    React.useEffect(() => {
+    useEffect(() => {
+        if (isPaused) return;
         const timer = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
         }, 4000);
         return () => clearInterval(timer);
-    }, []);
+    }, [isPaused, images.length]);
 
+    const handlePrev = () => {
+        setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+    };
 
+    const handleNext = () => {
+        setCurrentImage((prev) => (prev + 1) % images.length);
+    };
 
     return (
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
@@ -64,19 +70,59 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="relative mt-4 mx-auto max-w-5xl group">
+                <div
+                    className="relative mt-4 mx-auto max-w-5xl group"
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)}
+                >
                     <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[500px]">
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 pointer-events-none"></div>
+
+                        {/* Images */}
                         {images.map((img, index) => (
                             <img
                                 key={index}
                                 src={img}
-                                alt={`Slide ${index + 1}`}
+                                alt={`ESVO Community & School Impact ${index + 1}`}
                                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImage ? 'opacity-100' : 'opacity-0'
                                     }`}
+                                loading={index === 0 ? "eager" : "lazy"}
                             />
                         ))}
+
+                        {/* Prev / Next Arrows */}
+                        <button
+                            type="button"
+                            onClick={handlePrev}
+                            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/20 hover:bg-white/80 text-white hover:text-slate-900 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center"
+                            aria-label="Previous slide"
+                        >
+                            <ChevronLeft size={24} />
+                        </button>
+                        <button
+                            type="button"
+                            onClick={handleNext}
+                            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/20 hover:bg-white/80 text-white hover:text-slate-900 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center"
+                            aria-label="Next slide"
+                        >
+                            <ChevronRight size={24} />
+                        </button>
+
+                        {/* Pagination Dots */}
+                        <div className="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2.5">
+                            {images.map((_, index) => (
+                                <button
+                                    key={index}
+                                    type="button"
+                                    onClick={() => setCurrentImage(index)}
+                                    className={`h-2.5 rounded-full transition-all duration-300 ${index === currentImage ? 'w-8 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/80'
+                                        }`}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                />
+                            ))}
+                        </div>
                     </div>
+
                     {/* Decorative elements */}
                     <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-secondary/30 rounded-full filter blur-3xl opacity-50 -z-10"></div>
                     <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary-400/30 rounded-full filter blur-3xl opacity-50 -z-10"></div>
@@ -87,3 +133,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
