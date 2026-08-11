@@ -4,6 +4,7 @@ import ValuesStats from '../sections/ValuesStats';
 import Programs from '../sections/Programs';
 import Approach from '../sections/Approach';
 import ImpactData from '../sections/ImpactData';
+import Testimonials from '../sections/Testimonials';
 import Team from '../sections/Team';
 import AudienceCards from '../sections/AudienceCards';
 import Campaign from '../sections/Campaign';
@@ -17,6 +18,7 @@ const Home = () => {
             <Programs />
             <Approach />
             <ImpactData />
+            <Testimonials />
             <Team />
             <AudienceCards />
             <Campaign />
